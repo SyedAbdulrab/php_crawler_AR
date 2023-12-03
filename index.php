@@ -49,6 +49,8 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+                        word-wrap: break-word; /* Added property to allow text to move to the next line */
+
         }
 
         .result-link {

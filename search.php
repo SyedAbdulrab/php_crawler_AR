@@ -22,6 +22,7 @@
 
         .result-item {
             margin-bottom: 10px;
+            word-wrap: break-word; /* Added property to allow text to move to the next line */
         }
 
         .result-link {
@@ -40,7 +41,6 @@
         // Get the URL parameter from the query string
         $url = isset($_GET['url']) ? $_GET['url'] : '';
         $searchKeyword = isset($_GET['searchword']) ? $_GET['searchword'] : '';
-
 
         // Check if the URL parameter is empty
         if (empty($url) || empty($searchKeyword)) {
